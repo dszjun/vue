@@ -7,5 +7,9 @@ export function getToken () {
 }
 
 export function setToken (token) {
-  return Cookies.set(TokenKey, token)
+  return Cookies.set(TokenKey, token, { domain: process.env.COOKIE_DOMAIN })
+}
+
+export function removeToken () {
+  return Cookies.remove(TokenKey, { domain: process.env.COOKIE_DOMAIN })
 }
