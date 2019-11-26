@@ -1,0 +1,23 @@
+html {
+  //overflow-y: scroll;
+  overflow: hidden;
+}
+
+:root {
+  //overflow-y: auto;
+  //overflow-x: hidden;
+  overflow: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
